@@ -9,6 +9,7 @@ export class Player extends Point {
    }
 
    public move(dx: number, dy: number): void {
-       
+       this.setX(this.getX() + dx);
+       this.setY(this.getY() + dy);
    }
 }
